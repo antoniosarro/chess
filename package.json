@@ -5,7 +5,6 @@
     "format": "pnpm pretty && pnpm lint",
     "pretty": "prettier --write \"**/*.+(js|cjs|mjs|jsx|json|html|css|less|scss|ts|tsx|svelte|yml|yaml|md|graphql|mdx)\" .",
     "lint": "eslint .",
-    "cs": "changeset && git add .changeset",
     "prepare": "husky",
     "client": "pnpm --filter @chess/client"
   },
@@ -14,7 +13,6 @@
     "pnpm": "9.5.0"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.27.7",
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
     "@eslint/compat": "^1.1.1",
@@ -28,7 +26,6 @@
     "eslint-plugin-prettier": "^5.1.3",
     "eslint-plugin-svelte": "^2.42.0",
     "eslint-plugin-unused-imports": "^4.0.0",
-    "globals": "^15.8.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.7",
     "prettier": "^3.3.2",
