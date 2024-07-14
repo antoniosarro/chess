@@ -4,9 +4,13 @@
   "scripts": {
     "format": "pnpm pretty && pnpm lint",
     "pretty": "prettier --write \"**/*.+(js|cjs|mjs|jsx|json|html|css|less|scss|ts|tsx|svelte|yml|yaml|md|graphql|mdx)\" .",
+    "pretty:check": "prettier --check \"**/*.+(js|cjs|mjs|jsx|json|html|css|less|scss|ts|tsx|svelte|yml|yaml|md|graphql|mdx)\" .",
     "lint": "eslint .",
     "prepare": "husky",
-    "client": "pnpm --filter @chess/client"
+    "fe": "pnpm --filter @chess/client",
+    "be": "pnpm --filter @chess/server",
+    "ws": "pnpm --filter @chess/websocket",
+    "logger": "pnpm --filter logger"
   },
   "engines": {
     "node": "21.7.3",
@@ -31,6 +35,7 @@
     "prettier": "^3.3.2",
     "prettier-plugin-svelte": "^3.2.5",
     "typescript": "^5.5.3",
-    "vite": "^5.3.3"
+    "vite": "^5.3.3",
+    "vite-plugin-dts": "^3.9.1"
   }
 }

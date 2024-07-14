@@ -1,0 +1,16 @@
+{
+  "name": "@chess/server",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "serve": "node build/index.js"
+  },
+  "dependencies": {
+    "logger": "workspace:*",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21"
+  }
+}

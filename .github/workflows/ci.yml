@@ -15,4 +15,5 @@ jobs:
           node-version: 21.7.3
           cache: 'pnpm'
       - run: pnpm install
+      - run: pnpm pretty:check
       - run: pnpm lint
